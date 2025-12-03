@@ -899,4 +899,153 @@
                 <p>Traditional gas welding techniques for precision joins. Ideal for repair work and custom fabrication projects.</p>
             </div>
             <div class="service-card">
-                <span></span>
+                <span class="service-number">04</span>
+                <div class="service-icon">🔧</div>
+                <h3>Custom Welding Fabrication</h3>
+                <p>We design and manufacture custom metal structures, frames, gates, exhausts, brackets and industrial components suitable for your specific needs.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-number">05</span>
+                <div class="service-icon">🚗</div>
+                <h3>Professional Panelbeating</h3>
+                <p>From minor dents to full accident damage repair, we restore your vehicle body with precision, ensuring factory-level alignment and finishing.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-number">06</span>
+                <div class="service-icon">🎨</div>
+                <h3>Automotive Spray Painting</h3>
+                <p>High-quality spray painting using durable automotive paints. We offer color matching, polishing, resprays and showroom-quality refinishing.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-number">07</span>
+                <div class="service-icon">🛠️</div>
+                <h3>Exhaust Repairs & Custom Exhausts</h3>
+                <p>We repair, modify and fabricate exhaust systems for all vehicle types. Stainless steel and mild-steel options available.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-number">08</span>
+                <div class="service-icon">🏗️</div>
+                <h3>Steel Gates, Fencing & Burglar Bars</h3>
+                <p>Strong, durable and stylish steelwork for home and business security — custom designs made to order.</p>
+            </div>
+
+            <div class="service-card">
+                <span class="service-number">09</span>
+                <div class="service-icon">⚙️</div>
+                <h3>Industrial & Structural Welding</h3>
+                <p>We handle on-site and workshop welding for heavy-duty structures, commercial fabrication and reinforcement projects.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2 class="section-title" data-text="CONTACT"><span>CONTACT US</span></h2>
+        </div>
+
+        <div class="contact-wrapper">
+
+            <div>
+
+                <div class="contact-info-box">
+                    <div class="contact-info-content">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Our Location</h3>
+                            <p>Johannesburg, Gauteng, South Africa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info-box">
+                    <div class="contact-info-content">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Call Us</h3>
+                            <p>+27 63 000 0000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-info-box">
+                    <div class="contact-info-content">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>info@moosawelding.co.za</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <form class="contact-form">
+                <h3 style="color:#ff6b00; margin-bottom:1.5rem;">Send Us a Message</h3>
+
+                <input type="text" placeholder="Your Full Name" required
+                    style="width:100%; padding:1rem; margin-bottom:1.2rem; border-radius:10px; border:none; outline:none;">
+
+                <input type="email" placeholder="Your Email" required
+                    style="width:100%; padding:1rem; margin-bottom:1.2rem; border-radius:10px; border:none; outline:none;">
+
+                <input type="text" placeholder="Subject" required
+                    style="width:100%; padding:1rem; margin-bottom:1.2rem; border-radius:10px; border:none; outline:none;">
+
+                <textarea placeholder="Your Message" rows="6" required
+                    style="width:100%; padding:1rem; margin-bottom:1.2rem; border-radius:10px; border:none; outline:none;"></textarea>
+
+                <button type="submit"
+                    style="padding:1.2rem 2.5rem; background:linear-gradient(135deg,#ff6b00,#ffaa00); color:#000; font-weight:bold; border:none; border-radius:12px; cursor:pointer; width:100%;">
+                    Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer style="background:#000; padding:4rem 5%; text-align:center; border-top:1px solid rgba(255,255,255,0.1);">
+        <h2 style="letter-spacing:3px; margin-bottom:1rem;">MOOSA TIG & MIG WELDING</h2>
+        <p style="color:#ccc;">© 2025 Moosa Welding & Panelbeating. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JAVASCRIPT (NAV SCROLL + PARTICLES + CANVAS) -->
+    <script>
+        // NAV SCROLL EFFECT
+        window.addEventListener('scroll', () => {
+            document.querySelector('nav').classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // BACKGROUND PARTICLE GENERATOR
+        const bg = document.querySelector('.animated-bg');
+        for (let i = 0; i < 100; i++) {
+            const p = document.createElement('div');
+            p.className = 'particle';
+            const size = Math.random() * 5 + 2;
+            p.style.width = `${size}px`;
+            p.style.height = `${size}px`;
+            p.style.left = `${Math.random() * 100}%`;
+            p.style.top = `${Math.random() * 100}%`;
+            p.style.background = `rgba(255,107,0,${Math.random() * 0.4})`;
+            p.style.animation = `float ${Math.random() * 10 + 5}s infinite ease-in-out`;
+            bg.appendChild(p);
+        }
+
+        // FLOAT ANIMATION KEYFRAMES
+        const style = document.createElement('style');
+        style.textContent = `
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-25px); }
+            100% { transform: translateY(0px); }
+        }`;
+        document.head.appendChild(style);
+    </script>
+
+</body>
+</html>
